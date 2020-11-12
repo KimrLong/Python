@@ -8,7 +8,7 @@ if(service == "good"):
     print("Your total amount is " + str(total_bill))
     print("each person pays " + str(total_bill/split))
 elif(service == "fair"):
-    total_bill = bill+bill*1.15
+    total_bill = bill+bill*0.15
     print(bill * 0.15)
     print("your tip amount was " + str(bill*0.15))
     print("Your total amount is " + str(total_bill))
