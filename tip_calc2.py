@@ -1,3 +1,6 @@
+#Tip calculator 2.0
+
+
 bill = int(input("what is the bill price? : "))
 service = input("How was your service? good? fair? bad? : ").lower()
 split = int(input("Split how many ways : "))
@@ -16,3 +19,4 @@ elif(service == "bad"):
 
 print("Your total amount is: " + str(total_bill))
 print("each person pays: " + str(total_bill/split))
+
