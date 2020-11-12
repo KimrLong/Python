@@ -1,6 +1,6 @@
 #Coins you want
 
-response = "yes"
+ Want = "yes"
 while response = "yes":
     coins = 0
     print("You have %d coins. " % coins)
