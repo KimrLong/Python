@@ -7,7 +7,7 @@
 
 
 def word_count(paragraph):
-    word_freq={}  #letter_frequency['o'] = 4 letter_frequency = {'o': 4}
+    word_freq={}  
     for word in paragraph.split():
         if word not in word_freq:
             word_freq[word] = 1
