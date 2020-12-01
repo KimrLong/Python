@@ -8,7 +8,7 @@
 
 def word_count(paragraph):
     word_freq={}  
-    for word in paragraph.split():
+    for word in paragraph.lower().split(' '):
         if word not in word_freq:
             word_freq[word] = 1
         else:
