@@ -5,15 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <style>
-        div {
-            color: rgb(15, 155, 15);
-            font-size: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/GOT.css">
+
 </head>
 <body>
-    GOT FEVER
+    <div class="container-fluid justify-content-center">
+        <div class="row align-items-center">
+            <div class="col">
+                Game of Thrones Characters
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col list-group"></div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 <!-- <ul><li></li></ul>
 
     <script>
@@ -39,24 +68,24 @@
     <script src="JS/GOT.js"></script>
     <script>
 
-        let responsePromise = fetch('https://anapioficeandfire.com/api/characters/?page=1&pageSize=50')
+        // let responsePromise = fetch('https://anapioficeandfire.com/api/characters/?page=1&pageSize=50')
 
-        responsePromise.then((results)=>{
-            // console.log(results.json())
-            return results.json();
-        })
+        // responsePromise.then((results)=>{
+        //     // console.log(results.json())
+        //     return results.json();
+        // })
 
-        .then((data)=>{
-            console.log(data)
-        })
+        // .then((data)=>{
+        //     console.log(data)
+        // })
 
-        console.log(responsePromise)
+        // console.log(responsePromise)
 
-        for(let i = 0; i<10; i++) {
-            let p = 2 + i;
-        }
+        // for(let i = 0; i<10; i++) {
+        //     let p = 2 + i;
+        // }
 
-        console.log("loop has compelted")
+        // console.log("loop has compelted")
 
      </script> 
 </body>

@@ -1,0 +1,29 @@
+.list-group {
+    background-color: forestgreen
+    
+}
+.body-row{
+    position: relative;
+}
+
+@font-face {
+    font-family: GameOfThrones;
+    src: url(./assets/fonts/Game\ of\ Thrones.ttf);
+}  
+@font-face {
+    font-family: Aquifer;
+    src: url(./assets/fonts/Aquifer.ttf);
+}  
+div {
+    color: rgb(15, 155, 15);
+    font-size: 20px;
+}
+body {
+    color: purple;
+    background-color: rgb(170, 41, 41);
+    font-family: Aquifer;
+}
+.col {
+    font-size: 50px;
+    text-align:center;
+}

@@ -64,21 +64,64 @@ $(()=>{
 
                 pageNum += 1;
                 charArr = [...charArr, ...response];
-                console.log(pageNum);
-                console.log(response);
+
                 getNames(pageNum);
                 }
                 else{
+//Add ELSE code for alliaces if a name does not come up
+                    console.log(charArr);
 
-                    console.log("dom manip");
+                    let $listGroupContainer = $('.list-group')
+
+                    let liTags = charArr.map((char)=>{
+                        return `<a href="${char.url}" class="list-group-item list-group-item-action">${char.name} <b>Houses</b> ${char.allegiances.length}</a>`
+                    })
+                    $listGroupContainer.html(liTags.join(' '))
+                    
                 }
     })
 
 
 }
 
-getNames();
+getNames(pageNum);
 
 console.log(`I'm done ${pageNum}`);
+
+let $div = $(".list-group");
+$div.click((e)=>{
+    e.preventDefault();
+
+    console.log(e.target.href);
+
+    $.get(e.target.href)
+    .done((detailedCharObj)=>{
+
+        let $modalBody = $('.modal-body');
+
+        let $modalTitle = $('#exampleModalLabel');
+
+        $modalBody.html("");
+
+        $modalTitle.html(detailedCharObj.name)
+
+        //console.log(detailedCharObj.allegiances.length);
+
+        if(detailedCharObj.allegiances.length > 0){
+            detailedCharObj.allegiances.forEach((houseUrl)=>{
+                $.get(houseUrl)
+                .done((houseObj)=>{
+                    console.log(houseObj.name);
+                    $modalBody.html(`<br>${modalBody.html()}<br>${houseObj.name}`)
+
+
+                })
+            })
+        }
+
+        $('#exampleModal').modal('show');
+
+    })//end of done statement
+})
 
 })
