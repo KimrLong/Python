@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(228, 240, 239);
+}
+.formColor{
+    background-color: rgb(255, 251, 233);
+    border: 2px solid rgb(255, 192, 170);
+}
+
+.formFont{
+    font-size: 18px;
+    font-family: sans-serif;
+    color:midnightblue
+}
