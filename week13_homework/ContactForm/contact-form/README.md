@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+            <div onClick={()=>setShowDetails(!showDetails)}>
+            {showDetails
+            ?
+            <div>
+                {contact.name} <br/>
+                {contact.address} <br/>
+                {contact.city} <br/>
+                {contact.number} <br/>
+                {contact.email} <br/>
+            </div>
+            :
+            <div>{contact.name} {contact.city}, {contact.state}</div>
+
+            }
+            </div> 

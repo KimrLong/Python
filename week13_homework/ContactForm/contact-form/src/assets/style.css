@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: rgb(228, 240, 239);
 }
 .formColor{
@@ -10,4 +10,8 @@ body{
     font-size: 18px;
     font-family: sans-serif;
     color:midnightblue
+} */
+
+.button{
+    display: none;
 }
